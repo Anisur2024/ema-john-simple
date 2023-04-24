@@ -7,7 +7,7 @@ const Products = (props) => {
     const { img, name, seller, price, stock } = props.products;
     return (
         <div className='product'>
-            <div>
+            <div className=''>
                 <img src={img} alt="" />
             </div>
             <div>
@@ -18,6 +18,7 @@ const Products = (props) => {
                 <br />
                 <p><small>Only {stock} left in stock - Order soon</small></p>
                 <button className='main-button' onClick={props.handleAddProduct}>add to cart</button>
+               
             </div>
         </div>
     );
